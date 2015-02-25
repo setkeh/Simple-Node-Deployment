@@ -1,0 +1,13 @@
+{
+	"tags":{
+		"instance1Name": "Simple-Nodejs-Proxy",
+		"instance2Name": "Simple-Nodejs-Node1",
+		"instance3Name": "Simple-Nodejs-Node2"
+	},
+	"params": {
+		"ImageId": "ami-abeb9e91", 
+		"InstanceType": "t2.micro",
+		"MinCount": "3",
+		"MaxCount": "3"
+	}
+}
