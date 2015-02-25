@@ -6,5 +6,8 @@ all: ;@echo "Building the Entire Project for ${PROJECT}"; \
 instances: ;@echo "Asking Amazon Nicely to create ${PROJECT} Instances"; \
   node instances.js
 
-createsecuritygroup: ;@echo "Creating Group security group and adding open ports"; \
+createsecuritygroup: ;@echo "Creating Group security group"; \
   node createsecurity.js
+
+portforwards: ;@echo "Opening Ports"; \
+	node addsecurity.js
