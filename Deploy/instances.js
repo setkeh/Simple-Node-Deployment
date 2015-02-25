@@ -1,7 +1,7 @@
 var AWS = require('aws-sdk'); 
 var ec2 = new AWS.EC2({region: 'ap-southeast-2', maxRetries: 15});
 var config = require('./config.json');
-var params = config.params;
+var params = config.ec2;
 
 // Create the instance
 ec2.runInstances(params, function(err, data) {
