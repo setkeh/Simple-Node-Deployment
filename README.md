@@ -25,7 +25,7 @@ If you need to use Multiple API keys you can follow,
 
 To setup api profiles.
 
-API Profiles will Require the following modification to [instance.js](Deploy/instance.js) 
+API Profiles will Require the following modification to [instances.js](Deploy/instances.js) 
 
 	var credentials = new AWS.SharedIniFileCredentials({profile: 'ProfileName'});
 	AWS.config.credentials = credentials;
