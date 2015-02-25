@@ -32,9 +32,11 @@ API Profiles will Require the following modification to [instances.js](Deploy/in
 
 there is probably a better way of doing than hardcoding it in the JS and i shall add it to the todo list.
 
+I have not included security groups to make all because it somthing that should only need to be run once or can be run seperatly to update the security groups to keep the duplicate errors out of the STDOUT/STDERR to keep debugging easier.
 
 # To-Do
 My List of To-Do's to improve the current code.
 
   * Nginx Puppet module to setup the Proxy and Load balancer according to the upstrem module
   * Find the best way of implimenting AWS key profiles instead f hardcoding the config in the JS
+  * Change the port forward for port 3000 to only accept requests from the IP of nginx node.
