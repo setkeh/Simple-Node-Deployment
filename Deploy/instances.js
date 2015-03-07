@@ -1,10 +1,9 @@
 var AWS = require('aws-sdk'); 
 var ec2 = new AWS.EC2({region: 'ap-southeast-2', maxRetries: 15});
-var config = require('./config.json');
-var params = config.ec2;
+var config = require('./config');
 
 // Create the instance
-ec2.runInstances(params, function(err, data) {
+ec2.runInstances(config.ec2, function(err, data) {
   if (err) { console.log("Could not create instance", err); return; }
 
   var instanceIdProxy = data.Instances[0].InstanceId;
